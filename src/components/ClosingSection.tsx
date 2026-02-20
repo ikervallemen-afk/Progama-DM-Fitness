@@ -3,7 +3,7 @@ const ClosingSection = () => {
     <section className="py-20 md:py-28 section-elevated">
       <div className="container mx-auto px-4 max-w-2xl text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          Deja de responder mensajes manualmente.
+          Deja de responder manualmente.
         </h2>
         <p className="text-xl text-muted-foreground mb-4">
           Empieza a construir un negocio con sistema.
@@ -19,7 +19,7 @@ const ClosingSection = () => {
           href="#cta"
           className="inline-block bg-primary text-primary-foreground font-display font-bold text-xl px-10 py-5 rounded-lg animate-pulse-glow hover:brightness-110 transition-all duration-300"
         >
-          👉 Activar mi Sistema DM Fitness ahora
+          👉 Activar el Sistema DM Fitness
         </a>
       </div>
     </section>
