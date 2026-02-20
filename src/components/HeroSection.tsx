@@ -24,10 +24,8 @@ const HeroSection = () => {
             Convierte tus DMs de Instagram en un sistema que filtra y agenda clientes{" "}
             <span className="text-gradient-green">automáticamente</span>
             <span className="block text-xl md:text-2xl font-medium text-muted-foreground mt-3">
-              (sin contratar setters)
             </span>
           </h1>
-
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
             Si eres coach de fitness online y recibes mensajes como "Info" o "Precio?", esta plantilla convierte esos DMs en un sistema que trabaja por ti 24/7.
           </p>
@@ -46,7 +44,7 @@ const HeroSection = () => {
             ))}
           </div>
 
-          <CTAButton>Activa tu Sistema DM Fitness por solo 17€</CTAButton>
+          <CTAButton>Activa el Programa DM Fitness por solo 17€</CTAButton>
 
           <p className="mt-4 text-sm text-muted-foreground">
             Acceso inmediato • Sin conocimientos técnicos • Diseñado para coaches online
