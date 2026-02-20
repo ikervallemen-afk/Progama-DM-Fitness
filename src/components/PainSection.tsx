@@ -3,10 +3,8 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const painPoints = [
   { icon: MessageCircle, text: "Recibes muchos mensajes, pero pocos terminan comprando." },
-  { icon: Clock, text: "Respondes tarde y el lead se enfría." },
   { icon: HelpCircle, text: "No sabes quién tiene dinero y quién solo pregunta por curiosidad." },
   { icon: MessageSquare, text: "Tienes conversaciones perdidas en tus DMs." },
-  { icon: Wifi, text: "Todo depende de que tú estés conectado." },
 ];
 
 const PainSection = () => {
@@ -31,7 +29,7 @@ const PainSection = () => {
             Y aunque generas contenido… sientes que estás dejando dinero sobre la mesa.
           </p>
           <p className="mt-6 text-2xl font-bold text-gradient-green">
-            No es que te falten leads. Te falta sistema.
+            No te faltan leads. Te falta sistema.
           </p>
         </div>
       </div>
