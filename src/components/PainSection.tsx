@@ -12,7 +12,7 @@ const PainSection = () => {
     <section className="py-20 md:py-28 section-elevated">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-          Si eres coach online, probablemente te esté pasando esto:
+          Como Entrenador Personal, probablemente te esté pasando esto:
         </h2>
         <div className="max-w-2xl mx-auto mt-12 space-y-6">
           {painPoints.map(({ icon: Icon, text }, i) => (
