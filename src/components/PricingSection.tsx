@@ -4,7 +4,7 @@ const PricingSection = () => {
       <div className="container mx-auto px-4 max-w-2xl text-center">
         <div className="mb-10 space-y-3 text-muted-foreground">
           <p>Un setter puede costarte entre <strong className="text-foreground">800€ y 1.200€ al mes</strong>.</p>
-          <p>Perder solo un cliente puede significar <strong className="text-foreground">500€ – 1.500€ menos</strong> en tu facturación.</p>
+          <p>Perder solo un cliente puede significar <strong className="text-foreground">300€ – 1.000€ menos</strong> en tu facturación.</p>
         </div>
 
         <p className="text-lg text-muted-foreground mb-2">Hoy puedes implementar tu propio sistema por solo:</p>
@@ -23,7 +23,7 @@ const PricingSection = () => {
           href="#cta"
           className="inline-block bg-primary text-primary-foreground font-display font-bold text-xl px-10 py-5 rounded-lg animate-pulse-glow hover:brightness-110 transition-all duration-300"
         >
-          👉 Sí, quiero mi Sistema DM Fitness por 17€
+          👉 Quiero mi Programa DM Fitness por 17€
         </a>
 
         <div className="mt-8 text-sm text-muted-foreground space-y-1">
