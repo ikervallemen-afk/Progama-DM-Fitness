@@ -27,7 +27,7 @@ const HeroSection = () => {
             </span>
           </h1>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
-            Si eres coach de fitness online y recibes mensajes como "Info" o "Precio?", esta plantilla convierte esos DMs en un sistema que trabaja por ti 24/7.
+            Si eres Personal Trainer y recibes mensajes como "Info" o "Precio?", esta plantilla convierte esos DMs en un sistema que trabaja por ti 24/7.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-10">
