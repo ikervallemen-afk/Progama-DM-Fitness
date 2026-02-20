@@ -6,8 +6,8 @@ const AgitationSection = () => {
       <div className="container mx-auto px-4 max-w-3xl text-center">
         <AlertTriangle className="w-12 h-12 text-primary mx-auto mb-6" />
         <h2 className="text-3xl md:text-4xl font-bold mb-8">
-          Cada DM que no filtras es una{" "}
-          <span className="text-gradient-green">venta perdida</span>.
+          Cada DM que no filtras 
+          es una{" "} <span className="text-gradient-green">venta perdida</span>.
         </h2>
         <p className="text-lg text-muted-foreground mb-8">Mientras respondes manualmente:</p>
         <div className="space-y-4 text-left max-w-lg mx-auto">
