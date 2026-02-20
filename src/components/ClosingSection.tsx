@@ -19,7 +19,7 @@ const ClosingSection = () => {
           href="#cta"
           className="inline-block bg-primary text-primary-foreground font-display font-bold text-xl px-10 py-5 rounded-lg animate-pulse-glow hover:brightness-110 transition-all duration-300"
         >
-          👉 Activar el Sistema DM Fitness
+          👉 Activar el Programa DM Fitness
         </a>
       </div>
     </section>
