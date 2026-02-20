@@ -7,8 +7,8 @@ const SolutionSection = () => {
         <div className="text-center mb-12">
           <Zap className="w-10 h-10 text-primary mx-auto mb-4" />
           <h2 className="text-3xl md:text-4xl font-bold">
-            Te presento la Plantilla{" "}
-            <span className="text-gradient-green">"Sistema DM Fitness"</span>
+            Te presento el{" "}
+            <span className="text-gradient-green">"Programa DM Fitness"</span>
           </h2>
           <p className="mt-4 text-muted-foreground text-lg">
             Una plantilla lista para usar que convierte una palabra clave como <strong className="text-foreground">"PLAN"</strong> en un sistema automático que:
@@ -38,7 +38,7 @@ const SolutionSection = () => {
         <div className="mt-10 p-6 rounded-lg border border-primary/20 bg-primary/5 text-center">
           <p className="text-muted-foreground">Esto no es un chatbot técnico.</p>
           <p className="text-xl font-bold mt-2 text-foreground">
-            Es un <span className="text-gradient-green">sistema de conversión</span> para coaches fitness.
+            Es un <span className="text-gradient-green">sistema de conversión</span> para Personal Trainers.
           </p>
         </div>
       </div>
