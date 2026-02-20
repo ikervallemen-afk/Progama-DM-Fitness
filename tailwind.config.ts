@@ -82,11 +82,16 @@ export default {
           "0%, 100%": { boxShadow: "0 0 20px -5px hsl(142 70% 45% / 0.4)" },
           "50%": { boxShadow: "0 0 30px -5px hsl(142 70% 45% / 0.6)" },
         },
+        "reveal-up": {
+          "0%": { opacity: "0", transform: "translateY(40px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "pulse-glow": "pulse-glow 2s ease-in-out infinite",
+        "reveal-up": "reveal-up 0.7s ease-out forwards",
       },
     },
   },

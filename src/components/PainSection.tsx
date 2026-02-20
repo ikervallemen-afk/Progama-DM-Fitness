@@ -1,4 +1,5 @@
 import { MessageCircle, Clock, HelpCircle, MessageSquare, Wifi } from "lucide-react";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const painPoints = [
   { icon: MessageCircle, text: "Recibes muchos mensajes, pero pocos terminan comprando." },
@@ -17,10 +18,12 @@ const PainSection = () => {
         </h2>
         <div className="max-w-2xl mx-auto mt-12 space-y-6">
           {painPoints.map(({ icon: Icon, text }, i) => (
-            <div key={i} className="flex items-start gap-4 bg-card p-5 rounded-lg border border-border">
-              <Icon className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
-              <p className="text-secondary-foreground">{text}</p>
-            </div>
+            <ScrollReveal key={i} delay={i * 100}>
+              <div className="flex items-start gap-4 bg-card p-5 rounded-lg border border-border">
+                <Icon className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
+                <p className="text-secondary-foreground">{text}</p>
+              </div>
+            </ScrollReveal>
           ))}
         </div>
         <div className="text-center mt-12 max-w-xl mx-auto">

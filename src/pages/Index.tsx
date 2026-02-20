@@ -8,20 +8,21 @@ import BonusSection from "@/components/BonusSection";
 import PricingSection from "@/components/PricingSection";
 import ObjectionsSection from "@/components/ObjectionsSection";
 import ClosingSection from "@/components/ClosingSection";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <HeroSection />
-      <PainSection />
-      <AgitationSection />
-      <SolutionSection />
-      <IncludesSection />
-      <ResultsSection />
-      <BonusSection />
-      <PricingSection />
-      <ObjectionsSection />
-      <ClosingSection />
+      <ScrollReveal><PainSection /></ScrollReveal>
+      <ScrollReveal><AgitationSection /></ScrollReveal>
+      <ScrollReveal><SolutionSection /></ScrollReveal>
+      <ScrollReveal><IncludesSection /></ScrollReveal>
+      <ScrollReveal><ResultsSection /></ScrollReveal>
+      <ScrollReveal><BonusSection /></ScrollReveal>
+      <ScrollReveal><PricingSection /></ScrollReveal>
+      <ScrollReveal><ObjectionsSection /></ScrollReveal>
+      <ScrollReveal><ClosingSection /></ScrollReveal>
     </div>
   );
 };
