@@ -1,11 +1,10 @@
 import { Package, Workflow, Filter, Video, Rocket } from "lucide-react";
 
 const items = [
-  { icon: Package, text: "Plantilla lista para importar en ManyChat o herramienta similar" },
+  { icon: Package, text: "Plantilla lista para importar en ManyChat" },
   { icon: Workflow, text: "Flujo optimizado específicamente para coaches de fitness online" },
-  { icon: Filter, text: "Secuencia estratégica de calificación" },
+  { icon: Filter, text: "3 Ebooks estratégicos" },
   { icon: Filter, text: "Estructura para filtrar curiosos sin presupuesto" },
-  { icon: Video, text: "Mini vídeo explicativo paso a paso (15 minutos)" },
 ];
 
 const IncludesSection = () => {
