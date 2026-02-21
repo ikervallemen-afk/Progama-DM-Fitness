@@ -2,7 +2,7 @@ import { Check, Zap } from "lucide-react";
 
 const SolutionSection = () => {
   return (
-    <section className="py-20 md:py-28 section-elevated">
+    <section id="solucion" className="py-20 md:py-28 section-elevated">
       <div className="container mx-auto px-4 max-w-3xl">
         <div className="text-center mb-12">
           <Zap className="w-10 h-10 text-primary mx-auto mb-4" />

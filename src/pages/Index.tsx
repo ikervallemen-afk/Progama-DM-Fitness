@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import PainSection from "@/components/PainSection";
 import AgitationSection from "@/components/AgitationSection";
@@ -14,6 +15,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Navbar />
       <HeroSection />
       <ScrollReveal><PainSection /></ScrollReveal>
       <ScrollReveal><AgitationSection /></ScrollReveal>
