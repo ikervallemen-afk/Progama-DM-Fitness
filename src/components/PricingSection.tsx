@@ -1,3 +1,5 @@
+import UrgencyBanner from "@/components/UrgencyBanner";
+
 const PricingSection = () => {
   return (
     <section id="cta" className="py-20 md:py-28 section-elevated">
@@ -17,6 +19,10 @@ const PricingSection = () => {
           <p>Acceso inmediato.</p>
           <p>Sin mensualidades.</p>
           <p>Sin compromiso.</p>
+        </div>
+
+        <div className="mb-8 max-w-md mx-auto">
+          <UrgencyBanner />
         </div>
 
         <a

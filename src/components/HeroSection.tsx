@@ -1,5 +1,6 @@
 import { Check } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import UrgencyBanner from "@/components/UrgencyBanner";
 
 const CTAButton = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
   <a
@@ -45,6 +46,10 @@ const HeroSection = () => {
           </div>
 
           <CTAButton>Activa el Programa DM Fitness por solo 17€</CTAButton>
+
+          <div className="mt-6 max-w-md">
+            <UrgencyBanner />
+          </div>
 
           <p className="mt-4 text-sm text-muted-foreground">
             Acceso inmediato • Sin conocimientos técnicos • Diseñado para coaches online
