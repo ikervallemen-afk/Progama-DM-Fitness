@@ -33,7 +33,7 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-20 md:py-28 bg-background">
+    <section id="testimonios" className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4 max-w-5xl">
         <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-4">
           Lo que dicen otros <span className="text-primary">coaches fitness</span>
