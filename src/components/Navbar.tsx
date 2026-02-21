@@ -59,8 +59,9 @@ const Navbar = () => {
           ))}
           <li className="ml-2">
             <a
-              href="#cta"
-              onClick={(e) => handleClick(e, "#cta")}
+              href="https://buy.stripe.com/eVq9ASaDd6VVaMP7gtd3i03"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm font-bold bg-primary text-primary-foreground px-4 py-2 rounded-md hover:brightness-110 transition-all"
             >
               Activar Sistema
@@ -98,8 +99,9 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="#cta"
-            onClick={(e) => handleClick(e, "#cta")}
+            href="https://buy.stripe.com/eVq9ASaDd6VVaMP7gtd3i03"
+            target="_blank"
+            rel="noopener noreferrer"
             className="block mt-2 text-center text-sm font-bold bg-primary text-primary-foreground px-4 py-2.5 rounded-md"
           >
             Activar Sistema
