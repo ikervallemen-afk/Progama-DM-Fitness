@@ -2,35 +2,14 @@ import { Gift } from "lucide-react";
 
 const bonuses = [
   {
-    number: 1,
-    title: "Cómo Filtrar Curiosos y Atraer Clientes con Presupuesto Alto",
-    points: [
-      "Por qué hablar con todos te hace perder dinero.",
-      "Cómo detectar intención real de compra.",
-      "Las señales psicológicas de un cliente listo para pagar.",
-      "Cómo dejar de atraer personas que solo preguntan precio.",
     ],
     footer: "Si estás cansado de conversaciones que no llegan a nada, este manual te cambia el enfoque completamente.",
   },
   {
-    number: 2,
-    title: "Libertad Real: Cómo Construir un Negocio Fitness que No Dependa de Estar 24/7 en Instagram",
-    points: [
-      "Por qué más contenido no significa más dinero.",
-      "Cómo dejar de ser el cuello de botella de tu negocio.",
-      "Cómo crear estabilidad sin estar pegado al móvil.",
-      "La diferencia entre coach autoempleado y coach empresario.",
     ],
     footer: "Si quieres escalar sin duplicar horas de trabajo, necesitas entender esto.",
   },
   {
-    number: 3,
-    title: "El Sistema de Seguimiento que Convierte Leads Fríos en Clientes (Sin Perseguirlos)",
-    points: [
-      "Por qué el dinero está en el seguimiento.",
-      "Cómo reactivar leads que dijeron 'te escribo luego'.",
-      "Cómo estructurar recordatorios estratégicos.",
-      "Cómo convertir indecisos en clientes sin parecer desesperado.",
     ],
     footer: "La mayoría pierde ventas aquí. Los que escalan, tienen sistema.",
   },
