@@ -41,7 +41,7 @@ const Navbar = () => {
           onClick={(e) => handleClick(e, "#hero")}
           className="font-display font-bold text-lg text-primary"
         >
-          DM Fitness
+          GLOWTH AGENCY
         </a>
 
         {/* Desktop */}
@@ -64,7 +64,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
               className="text-sm font-bold bg-primary text-primary-foreground px-4 py-2 rounded-md hover:brightness-110 transition-all"
             >
-              Activar Sistema
+              Activar Programa
             </a>
           </li>
         </ul>
