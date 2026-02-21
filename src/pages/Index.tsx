@@ -4,6 +4,7 @@ import AgitationSection from "@/components/AgitationSection";
 import SolutionSection from "@/components/SolutionSection";
 import IncludesSection from "@/components/IncludesSection";
 import ResultsSection from "@/components/ResultsSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import BonusSection from "@/components/BonusSection";
 import PricingSection from "@/components/PricingSection";
 import ObjectionsSection from "@/components/ObjectionsSection";
@@ -19,6 +20,7 @@ const Index = () => {
       <ScrollReveal><SolutionSection /></ScrollReveal>
       <ScrollReveal><IncludesSection /></ScrollReveal>
       <ScrollReveal><ResultsSection /></ScrollReveal>
+      <ScrollReveal><TestimonialsSection /></ScrollReveal>
       <ScrollReveal><BonusSection /></ScrollReveal>
       <ScrollReveal><PricingSection /></ScrollReveal>
       <ScrollReveal><ObjectionsSection /></ScrollReveal>
