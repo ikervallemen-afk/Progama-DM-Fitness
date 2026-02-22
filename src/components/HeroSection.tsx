@@ -1,6 +1,7 @@
 import { Check } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import UrgencyBanner from "@/components/UrgencyBanner";
+import { motion } from "framer-motion";
 
 const CTAButton = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
   <a
@@ -10,6 +11,13 @@ const CTAButton = ({ children, className = "" }: { children: React.ReactNode; cl
     {children}
   </a>
 );
+
+const heroItems = [
+  "Filtra curiosos",
+  "Detecta presupuesto",
+  "Agenda automáticamente",
+  "Te devuelve el control",
+];
 
 const HeroSection = () => {
   return (
@@ -21,39 +29,69 @@ const HeroSection = () => {
 
       <div className="relative z-10 container mx-auto px-4 py-20 md:py-32">
         <div className="max-w-3xl">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+          <motion.h1
+            initial={{ opacity: 0, y: 40, filter: "blur(10px)" }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
+          >
             Convierte tus DMs de Instagram en un sistema que filtra y agenda clientes{" "}
             <span className="text-gradient-green">automáticamente</span>
-            <span className="block text-xl md:text-2xl font-medium text-muted-foreground mt-3">
-            </span>
-          </h1>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
-            Si eres Personal Trainer y recibes mensajes como "Info" o "Precio?", esta plantilla convierte esos DMs en un sistema que trabaja por ti 24/7.
-          </p>
+          </motion.h1>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-10">
-            {[
-              "Filtra curiosos",
-              "Detecta presupuesto",
-              "Agenda automáticamente",
-              "Te devuelve el control",
-            ].map((item) => (
-              <div key={item} className="flex items-center gap-2">
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            className="text-lg text-muted-foreground mb-8 max-w-2xl"
+          >
+            Si eres Personal Trainer y recibes mensajes como "Info" o "Precio?", esta plantilla convierte esos DMs en un sistema que trabaja por ti 24/7.
+          </motion.p>
+
+          <motion.div
+            className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-10"
+            initial="hidden"
+            animate="visible"
+            variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.1, delayChildren: 0.5 } } }}
+          >
+            {heroItems.map((item) => (
+              <motion.div
+                key={item}
+                className="flex items-center gap-2"
+                variants={{ hidden: { opacity: 0, x: -20 }, visible: { opacity: 1, x: 0 } }}
+                transition={{ duration: 0.5 }}
+              >
                 <Check className="w-5 h-5 text-primary flex-shrink-0" />
                 <span className="text-foreground">{item}</span>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
 
-          <CTAButton>Activa el Programa DM Fitness por solo 17€</CTAButton>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.9, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <CTAButton>Activa el Programa DM Fitness por solo 17€</CTAButton>
+          </motion.div>
 
-          <div className="mt-6 max-w-md">
+          <motion.div
+            className="mt-6 max-w-md"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.1, duration: 0.5 }}
+          >
             <UrgencyBanner />
-          </div>
+          </motion.div>
 
-          <p className="mt-4 text-sm text-muted-foreground">
+          <motion.p
+            className="mt-4 text-sm text-muted-foreground"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.3, duration: 0.5 }}
+          >
             Acceso inmediato • Sin conocimientos técnicos • Diseñado para coaches online
-          </p>
+          </motion.p>
         </div>
       </div>
     </section>
