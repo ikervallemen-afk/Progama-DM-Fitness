@@ -1,35 +1,26 @@
 import { Gift } from "lucide-react";
 import ScrollReveal, { StaggerContainer, StaggerItem } from "@/components/ScrollReveal";
+import ebook1 from "@/assets/ebook-1.png";
+import ebook2 from "@/assets/ebook-2.png";
+import ebook3 from "@/assets/ebook-3.png";
 
 const bonuses = [
   {
     number: 1,
     title: "Manual de Ventas por DM para Coaches Fitness",
-    points: [
-      "Cómo abrir conversaciones que generan confianza",
-      "Scripts probados para cerrar en DMs sin ser agresivo",
-      "Errores que ahuyentan a tus prospectos calientes",
-    ],
+    image: ebook1,
     footer: "Si estás cansado de conversaciones que no llegan a nada, este manual te cambia el enfoque completamente.",
   },
   {
     number: 2,
     title: "Guía de Automatización Inteligente para Coaches",
-    points: [
-      "Cómo montar un embudo de DMs sin experiencia técnica",
-      "Herramientas gratuitas para automatizar sin invertir",
-      "Cómo delegar sin perder el toque personal",
-    ],
+    image: ebook2,
     footer: "Si quieres escalar sin duplicar horas de trabajo, necesitas entender esto.",
   },
   {
     number: 3,
     title: "Plantilla de Seguimiento de Leads por DM",
-    points: [
-      "Sistema para no perder ningún lead caliente",
-      "Cómo hacer seguimiento sin ser pesado",
-      "Métricas clave para saber si tu sistema funciona",
-    ],
+    image: ebook3,
     footer: "La mayoría pierde ventas aquí. Los que escalan, tienen sistema.",
   },
 ];
@@ -59,14 +50,13 @@ const BonusSection = () => {
                   </span>
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-foreground">"{bonus.title}"</h3>
-                <ul className="space-y-2 mb-4">
-                  {bonus.points.map((point, i) => (
-                    <li key={i} className="flex items-start gap-2 text-secondary-foreground">
-                      <span className="text-primary mt-1">•</span>
-                      <span>{point}</span>
-                    </li>
-                  ))}
-                </ul>
+                <div className="flex justify-center mb-4">
+                  <img
+                    src={bonus.image}
+                    alt={bonus.title}
+                    className="w-48 md:w-56 rounded-lg shadow-lg"
+                  />
+                </div>
                 <p className="text-sm text-muted-foreground italic">{bonus.footer}</p>
               </div>
             </StaggerItem>
