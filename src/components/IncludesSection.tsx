@@ -33,7 +33,8 @@ const IncludesSection = () => {
         <ScrollReveal animation="scaleUp" delay={0.3}>
           <div className="mt-10 flex items-center justify-center gap-2 text-primary font-semibold text-lg">
             <Rocket className="w-5 h-5" />
-            <span>Solo copiar, importar y activar.</span>
+            <span>Solo copiar, importar y activar</span>
+            <Rocket className="w-5 h-5" />
           </div>
         </ScrollReveal>
       </div>
