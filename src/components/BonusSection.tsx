@@ -7,19 +7,16 @@ import ebook3 from "@/assets/ebook-3.png";
 const bonuses = [
   {
     number: 1,
-    title: "Manual de Ventas por DM para Coaches Fitness",
     image: ebook1,
     footer: "Si estás cansado de conversaciones que no llegan a nada, este manual te cambia el enfoque completamente.",
   },
   {
     number: 2,
-    title: "Guía de Automatización Inteligente para Coaches",
     image: ebook2,
     footer: "Si quieres escalar sin duplicar horas de trabajo, necesitas entender esto.",
   },
   {
     number: 3,
-    title: "Plantilla de Seguimiento de Leads por DM",
     image: ebook3,
     footer: "La mayoría pierde ventas aquí. Los que escalan, tienen sistema.",
   },
