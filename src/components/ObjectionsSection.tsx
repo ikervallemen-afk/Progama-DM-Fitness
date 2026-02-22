@@ -1,3 +1,5 @@
+import ScrollReveal, { StaggerContainer, StaggerItem } from "@/components/ScrollReveal";
+
 const objections = [
   {
     question: '"No soy técnico"',
@@ -17,15 +19,19 @@ const ObjectionsSection = () => {
   return (
     <section id="faq" className="py-20 md:py-28 section-dark">
       <div className="container mx-auto px-4 max-w-2xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">Preguntas frecuentes</h2>
-        <div className="space-y-4">
+        <ScrollReveal animation="blur">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">Preguntas frecuentes</h2>
+        </ScrollReveal>
+        <StaggerContainer className="space-y-4" staggerDelay={0.12}>
           {objections.map((obj, i) => (
-            <div key={i} className="bg-card border border-border rounded-lg p-6">
-              <p className="font-bold text-foreground text-lg mb-2">{obj.question}</p>
-              <p className="text-muted-foreground">{obj.answer}</p>
-            </div>
+            <StaggerItem key={i} animation="fadeLeft">
+              <div className="bg-card border border-border rounded-lg p-6">
+                <p className="font-bold text-foreground text-lg mb-2">{obj.question}</p>
+                <p className="text-muted-foreground">{obj.answer}</p>
+              </div>
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerContainer>
       </div>
     </section>
   );
