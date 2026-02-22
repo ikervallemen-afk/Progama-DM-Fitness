@@ -46,7 +46,6 @@ const BonusSection = () => {
                     🎁 BONUS #{bonus.number}
                   </span>
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-foreground">"{bonus.title}"</h3>
                 <div className="flex justify-center mb-4">
                   <img
                     src={bonus.image}
