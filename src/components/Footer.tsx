@@ -1,5 +1,6 @@
 import { Instagram, Youtube, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
+import logo from "@/assets/logo.png";
 
 const footerLinks = [
   { label: "Inicio", href: "#" },
@@ -27,7 +28,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           {/* Brand */}
           <div>
-            <h3 className="font-bold text-lg mb-3 text-foreground">Sistema DM Fitness</h3>
+            <div className="flex items-center gap-3 mb-3">
+              <img src={logo} alt="Glowth Agency" className="h-10 w-auto" />
+              <h3 className="font-bold text-lg text-foreground">Glowth Agency</h3>
+            </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               El sistema paso a paso para coaches fitness que quieren cerrar clientes por mensaje directo sin ser invasivos.
             </p>
@@ -77,7 +81,7 @@ const Footer = () => {
             ))}
           </div>
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Sistema DM Fitness. Todos los derechos reservados.
+            © {new Date().getFullYear()} Glowth Agency. Todos los derechos reservados.
           </p>
         </div>
       </div>
