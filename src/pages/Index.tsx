@@ -10,6 +10,7 @@ import BonusSection from "@/components/BonusSection";
 import PricingSection from "@/components/PricingSection";
 import ObjectionsSection from "@/components/ObjectionsSection";
 import ClosingSection from "@/components/ClosingSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -26,6 +27,7 @@ const Index = () => {
       <PricingSection />
       <ObjectionsSection />
       <ClosingSection />
+      <Footer />
     </div>
   );
 };
