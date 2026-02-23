@@ -1,4 +1,5 @@
 import { Instagram, Youtube, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const footerLinks = [
   { label: "Inicio", href: "#" },
@@ -8,9 +9,9 @@ const footerLinks = [
 ];
 
 const legalLinks = [
-  { label: "Política de Privacidad", href: "#privacidad" },
-  { label: "Términos y Condiciones", href: "#terminos" },
-  { label: "Aviso Legal", href: "#aviso-legal" },
+  { label: "Política de Privacidad", to: "/privacidad" },
+  { label: "Términos y Condiciones", to: "/terminos" },
+  { label: "Aviso Legal", to: "/aviso-legal" },
 ];
 
 const socialLinks = [
@@ -70,9 +71,9 @@ const Footer = () => {
         <div className="border-t border-border pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex flex-wrap gap-4 justify-center">
             {legalLinks.map((link) => (
-              <a key={link.label} href={link.href} className="text-xs text-muted-foreground hover:text-primary transition-colors">
+              <Link key={link.label} to={link.to} className="text-xs text-muted-foreground hover:text-primary transition-colors">
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
           <p className="text-xs text-muted-foreground">
