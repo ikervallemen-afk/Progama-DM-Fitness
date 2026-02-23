@@ -25,7 +25,7 @@ const bonuses = [
 const BonusSection = () => {
   return (
     <section className="py-20 md:py-28 section-dark">
-      <div className="container mx-auto px-4 max-w-3xl">
+      <div className="container mx-auto px-4 max-w-5xl">
         <ScrollReveal animation="scaleUp">
           <div className="text-center mb-12">
             <Gift className="w-10 h-10 text-primary mx-auto mb-4" />
@@ -37,23 +37,19 @@ const BonusSection = () => {
           </div>
         </ScrollReveal>
 
-        <StaggerContainer className="space-y-8" staggerDelay={0.2}>
+        <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-6" staggerDelay={0.2}>
           {bonuses.map((bonus) => (
             <StaggerItem key={bonus.number} animation="fadeUp">
-              <div className="bg-card border border-border rounded-lg p-6 md:p-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="bg-primary text-primary-foreground text-sm font-bold px-3 py-1 rounded-md">
-                    🎁 BONUS #{bonus.number}
-                  </span>
-                </div>
-                <div className="flex justify-center mb-4">
-                  <img
-                    src={bonus.image}
-                    alt={bonus.title}
-                    className="w-48 md:w-56 rounded-lg shadow-lg"
-                  />
-                </div>
-                <p className="text-sm text-muted-foreground italic">{bonus.footer}</p>
+              <div className="bg-card border border-border rounded-lg p-5 flex flex-col items-center text-center h-full">
+                <span className="bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-md mb-4">
+                  🎁 BONUS #{bonus.number}
+                </span>
+                <img
+                  src={bonus.image}
+                  alt={`Ebook bonus ${bonus.number}`}
+                  className="w-36 h-auto rounded-lg shadow-lg mb-4"
+                />
+                <p className="text-sm text-muted-foreground italic mt-auto">{bonus.footer}</p>
               </div>
             </StaggerItem>
           ))}
