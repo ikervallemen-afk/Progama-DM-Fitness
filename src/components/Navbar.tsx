@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import logo from "@/assets/logo.png";
 const navItems = [
   { label: "Inicio", href: "#hero" },
   { label: "Problema", href: "#dolor" },
@@ -39,9 +39,10 @@ const Navbar = () => {
         <a
           href="#hero"
           onClick={(e) => handleClick(e, "#hero")}
-          className="font-display font-bold text-lg text-primary"
+          className="flex items-center gap-2"
         >
-          GLOWTH AGENCY
+          <img src={logo} alt="Glowth Agency" className="h-9 w-auto" />
+          <span className="font-display font-bold text-lg text-primary hidden sm:inline">GLOWTH AGENCY</span>
         </a>
 
         {/* Desktop */}
