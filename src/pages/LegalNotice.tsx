@@ -5,8 +5,8 @@ const LegalNotice = () => (
     <p>Última actualización: {new Date().toLocaleDateString("es-ES", { year: "numeric", month: "long", day: "numeric" })}</p>
 
     <h2>1. Datos identificativos</h2>
-    <p>En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, se informa que el titular de este sitio web es <strong>Sistema DM Fitness</strong>.</p>
-    <p>Correo electrónico de contacto: <strong>contacto@example.com</strong></p>
+    <p>En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, se informa que el titular de este sitio web es <strong>Glowth Agency</strong>.</p>
+    <p>Correo electrónico de contacto: <strong>glowthagency0@gmail.com</strong></p>
 
     <h2>2. Objeto del sitio web</h2>
     <p>Este sitio web tiene como finalidad la promoción y venta de productos digitales orientados a coaches fitness que desean mejorar sus habilidades de captación de clientes.</p>
@@ -18,7 +18,7 @@ const LegalNotice = () => (
     <p>Todos los contenidos del sitio web (textos, imágenes, logotipos, diseño gráfico, código fuente) están protegidos por derechos de propiedad intelectual e industrial.</p>
 
     <h2>5. Exclusión de responsabilidad</h2>
-    <p>Sistema DM Fitness no se hace responsable de los daños que pudieran derivarse del uso del sitio web, ni de la información contenida en enlaces externos.</p>
+    <p>Glowth Agency no se hace responsable de los daños que pudieran derivarse del uso del sitio web, ni de la información contenida en enlaces externos.</p>
 
     <h2>6. Enlaces externos</h2>
     <p>Este sitio puede contener enlaces a páginas externas sobre las que no tenemos control. No nos hacemos responsables del contenido de dichas páginas.</p>
