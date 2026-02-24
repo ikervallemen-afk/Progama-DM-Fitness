@@ -5,7 +5,6 @@ import logo from "@/assets/logo.png";
 const footerLinks = [
   { label: "Inicio", href: "#" },
   { label: "Qué incluye", href: "#incluye" },
-  { label: "Testimonios", href: "#testimonios" },
   { label: "Precio", href: "#precio" },
 ];
 
