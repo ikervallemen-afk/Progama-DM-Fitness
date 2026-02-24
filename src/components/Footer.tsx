@@ -16,9 +16,8 @@ const legalLinks = [
 ];
 
 const socialLinks = [
-  { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
-  { icon: Youtube, href: "https://youtube.com", label: "YouTube" },
-  { icon: Mail, href: "mailto:contacto@example.com", label: "Email" },
+  { icon: Instagram, href: "https://www.instagram.com/glowthagency_fitness/", label: "Instagram" },
+  { icon: Mail, href: "mailto:glowthagency0@gmail.com", label: "Email" },
 ];
 
 const Footer = () => {
@@ -33,7 +32,7 @@ const Footer = () => {
               <h3 className="font-bold text-lg text-foreground">Glowth Agency</h3>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              El sistema paso a paso para coaches fitness que quieren cerrar clientes por mensaje directo sin ser invasivos.
+              El sistema paso a paso para entrenadores personales que quieren cerrar clientes por mensaje directo sin ser invasivos.
             </p>
           </div>
 
