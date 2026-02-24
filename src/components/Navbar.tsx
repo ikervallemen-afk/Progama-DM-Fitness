@@ -5,7 +5,7 @@ const navItems = [
   { label: "Problema", href: "#dolor" },
   { label: "Solución", href: "#solucion" },
   { label: "Incluye", href: "#incluye" },
-  { label: "Testimonios", href: "#testimonios" },
+  
   { label: "Precio", href: "#cta" },
   { label: "FAQ", href: "#faq" },
 ];
