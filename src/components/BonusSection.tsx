@@ -31,7 +31,7 @@ const BonusSection = () => {
             <Gift className="w-10 h-10 text-primary mx-auto mb-4" />
             <h2 className="text-3xl md:text-4xl font-bold mb-2">Bonuses Exclusivos</h2>
             <p className="text-muted-foreground text-lg">
-              Hoy no solo accedes al Sistema DM Fitness. También recibes{" "}
+              Hoy no solo accedes al Programa DM Fitness. También recibes{" "}
               <strong className="text-foreground">3 guías estratégicas</strong> diseñadas para coaches que quieren escalar.
             </p>
           </div>
