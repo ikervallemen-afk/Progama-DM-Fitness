@@ -5,7 +5,7 @@ const PrivacyPolicy = () => (
     <p>Última actualización: {new Date().toLocaleDateString("es-ES", { year: "numeric", month: "long", day: "numeric" })}</p>
 
     <h2>1. Responsable del tratamiento</h2>
-    <p>El responsable del tratamiento de tus datos personales es <strong>Sistema DM Fitness</strong>. Puedes contactarnos en <strong>contacto@example.com</strong>.</p>
+    <p>El responsable del tratamiento de tus datos personales es <strong>Glowth Agency</strong>. Puedes contactarnos en <strong>glowthagency0@gmail.com</strong>.</p>
 
     <h2>2. Datos que recopilamos</h2>
     <p>Recopilamos los datos que nos proporcionas voluntariamente al realizar una compra o contactarnos: nombre, correo electrónico y datos de pago procesados de forma segura por pasarelas de pago externas.</p>
@@ -20,7 +20,7 @@ const PrivacyPolicy = () => (
     <p>Conservaremos tus datos mientras exista una relación comercial y durante el tiempo necesario para cumplir con obligaciones legales.</p>
 
     <h2>6. Derechos del usuario</h2>
-    <p>Puedes ejercer tus derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición escribiéndonos a <strong>contacto@example.com</strong>.</p>
+    <p>Puedes ejercer tus derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición escribiéndonos a <strong>glowthagency0@gmail.com</strong>.</p>
 
     <h2>7. Cookies</h2>
     <p>Este sitio web puede utilizar cookies técnicas y analíticas. Puedes configurar tu navegador para rechazarlas.</p>
