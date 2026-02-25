@@ -22,7 +22,7 @@ const PricingSection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             >
-              17€
+              9€
             </motion.span>
           </div>
         </ScrollReveal>
@@ -42,7 +42,7 @@ const PricingSection = () => {
             href="https://buy.stripe.com/eVq9ASaDd6VVaMP7gtd3i03"
             className="inline-block bg-primary text-primary-foreground font-display font-bold text-xl px-10 py-5 rounded-lg animate-pulse-glow hover:brightness-110 transition-all duration-300"
           >
-            👉 Quiero mi Programa DM Fitness por 17€
+            👉 Quiero mi Programa DM Fitness por 9€
           </a>
 
           <div className="mt-8 text-sm text-muted-foreground space-y-1">
