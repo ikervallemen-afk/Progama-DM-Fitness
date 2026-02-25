@@ -16,7 +16,7 @@ const IncludesSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-2">
             Qué incluye exactamente
           </h2>
-          <p className="text-primary text-xl font-semibold mb-10">Por solo 17€ obtienes:</p>
+          <p className="text-primary text-xl font-semibold mb-10">Por solo 9€ obtienes:</p>
         </ScrollReveal>
 
         <StaggerContainer className="space-y-4 text-left" staggerDelay={0.12}>
