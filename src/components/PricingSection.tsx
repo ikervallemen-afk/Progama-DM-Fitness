@@ -39,7 +39,7 @@ const PricingSection = () => {
           </div>
 
           <a
-            href="https://buy.stripe.com/eVq9ASaDd6VVaMP7gtd3i03"
+            href="https://buy.stripe.com/cNi9ASeTtbcb4or9oBd3i04"
             className="inline-block bg-primary text-primary-foreground font-display font-bold text-xl px-10 py-5 rounded-lg animate-pulse-glow hover:brightness-110 transition-all duration-300"
           >
             👉 Quiero mi Programa DM Fitness por 9€

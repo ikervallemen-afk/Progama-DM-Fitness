@@ -60,7 +60,7 @@ const Navbar = () => {
           ))}
           <li className="ml-2">
             <a
-              href="https://buy.stripe.com/eVq9ASaDd6VVaMP7gtd3i03"
+              href="https://buy.stripe.com/cNi9ASeTtbcb4or9oBd3i04"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-bold bg-primary text-primary-foreground px-4 py-2 rounded-md hover:brightness-110 transition-all"
@@ -100,7 +100,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="https://buy.stripe.com/eVq9ASaDd6VVaMP7gtd3i03"
+            href="https://buy.stripe.com/cNi9ASeTtbcb4or9oBd3i04"
             target="_blank"
             rel="noopener noreferrer"
             className="block mt-2 text-center text-sm font-bold bg-primary text-primary-foreground px-4 py-2.5 rounded-md"
