@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const CTAButton = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
   <a
-    href="https://buy.stripe.com/eVq9ASaDd6VVaMP7gtd3i03"
+    href="https://buy.stripe.com/cNi9ASeTtbcb4or9oBd3i04"
     className={`inline-block bg-primary text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-lg animate-pulse-glow hover:brightness-110 transition-all duration-300 ${className}`}
   >
     {children}
