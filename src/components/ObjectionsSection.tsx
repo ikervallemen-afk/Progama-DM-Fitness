@@ -1,4 +1,5 @@
 import ScrollReveal, { StaggerContainer, StaggerItem } from "@/components/ScrollReveal";
+import { motion } from "framer-motion";
 
 const objections = [
   {
@@ -25,10 +26,13 @@ const ObjectionsSection = () => {
         <StaggerContainer className="space-y-4" staggerDelay={0.12}>
           {objections.map((obj, i) => (
             <StaggerItem key={i} animation="fadeLeft">
-              <div className="bg-card border border-border rounded-lg p-6">
+              <motion.div
+                className="bg-card border border-border rounded-lg p-6 card-hover"
+                whileHover={{ borderColor: "hsl(190 100% 55% / 0.4)" }}
+              >
                 <p className="font-bold text-foreground text-lg mb-2">{obj.question}</p>
                 <p className="text-muted-foreground">{obj.answer}</p>
-              </div>
+              </motion.div>
             </StaggerItem>
           ))}
         </StaggerContainer>

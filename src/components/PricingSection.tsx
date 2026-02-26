@@ -4,8 +4,11 @@ import { motion } from "framer-motion";
 
 const PricingSection = () => {
   return (
-    <section id="cta" className="py-20 md:py-28 section-elevated">
-      <div className="container mx-auto px-4 max-w-2xl text-center">
+    <section id="cta" className="py-20 md:py-28 section-elevated relative overflow-hidden">
+      {/* Background glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 glow-dot animate-glow-pulse pointer-events-none opacity-30" />
+
+      <div className="container mx-auto px-4 max-w-2xl text-center relative z-10">
         <ScrollReveal animation="fadeUp">
           <div className="mb-10 space-y-3 text-muted-foreground">
             <p>Un setter puede costarte entre <strong className="text-foreground">800€ y 1.200€ al mes</strong>.</p>
@@ -38,12 +41,19 @@ const PricingSection = () => {
             <UrgencyBanner />
           </div>
 
-          <a
+          <motion.a
             href="https://buy.stripe.com/cNi9ASeTtbcb4or9oBd3i04"
-            className="inline-block bg-primary text-primary-foreground font-display font-bold text-xl px-10 py-5 rounded-lg animate-pulse-glow hover:brightness-110 transition-all duration-300"
+            className="inline-block bg-primary text-primary-foreground font-display font-bold text-xl px-10 py-5 rounded-lg animate-pulse-glow transition-all duration-300 relative overflow-hidden group"
+            whileHover={{ scale: 1.05, y: -3 }}
+            whileTap={{ scale: 0.97 }}
           >
-            👉 Quiero mi Programa DM Fitness por 9€
-          </a>
+            <span className="relative z-10">👉 Quiero mi Programa DM Fitness por 9€</span>
+            <motion.div
+              className="absolute inset-0 shimmer-bg opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              animate={{ backgroundPosition: ["0% 0%", "200% 0%"] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+            />
+          </motion.a>
 
           <div className="mt-8 text-sm text-muted-foreground space-y-1">
             <p>Empieza a construir estructura.</p>

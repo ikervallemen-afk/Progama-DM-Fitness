@@ -1,5 +1,6 @@
 import { TrendingUp } from "lucide-react";
 import ScrollReveal, { StaggerContainer, StaggerItem } from "@/components/ScrollReveal";
+import { motion } from "framer-motion";
 
 const results = [
   { metric: "+4 clientes", desc: "cerrados en el primer mes sin esfuerzo extra" },
@@ -14,7 +15,12 @@ const ResultsSection = () => {
       <div className="container mx-auto px-4 max-w-4xl">
         <ScrollReveal animation="blur">
           <div className="text-center mb-12">
-            <TrendingUp className="w-10 h-10 text-primary mx-auto mb-4" />
+            <motion.div
+              animate={{ y: [0, -6, 0] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <TrendingUp className="w-10 h-10 text-primary mx-auto mb-4" />
+            </motion.div>
             <h2 className="text-3xl md:text-4xl font-bold mb-2">
               Resultados <span className="text-gradient-green">reales</span>
             </h2>
@@ -27,10 +33,20 @@ const ResultsSection = () => {
         <StaggerContainer className="grid grid-cols-2 md:grid-cols-4 gap-4" staggerDelay={0.1}>
           {results.map((r, i) => (
             <StaggerItem key={i} animation="scaleUp">
-              <div className="bg-card border border-border rounded-lg p-6 text-center">
-                <p className="text-3xl font-bold text-primary mb-2">{r.metric}</p>
+              <motion.div
+                className="bg-card border border-border rounded-lg p-6 text-center card-hover"
+                whileHover={{ borderColor: "hsl(190 100% 55% / 0.4)" }}
+              >
+                <motion.p
+                  className="text-3xl font-bold text-primary mb-2"
+                  whileInView={{ scale: [0.5, 1.1, 1] }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.1 * i + 0.3 }}
+                >
+                  {r.metric}
+                </motion.p>
                 <p className="text-sm text-muted-foreground">{r.desc}</p>
-              </div>
+              </motion.div>
             </StaggerItem>
           ))}
         </StaggerContainer>
