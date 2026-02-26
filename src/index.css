@@ -83,4 +83,31 @@
   .section-elevated {
     background-color: hsl(var(--surface-elevated));
   }
+
+  /* Shimmer gradient for CTAs */
+  .shimmer-bg {
+    background: linear-gradient(
+      110deg,
+      hsl(190 100% 55%) 0%,
+      hsl(220 100% 70%) 40%,
+      hsl(270 80% 60%) 60%,
+      hsl(190 100% 55%) 100%
+    );
+    background-size: 200% 100%;
+  }
+
+  /* Hover card lift effect */
+  .card-hover {
+    @apply transition-all duration-300;
+  }
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px -10px hsl(190 100% 55% / 0.2), 0 4px 20px -5px hsl(270 80% 60% / 0.15);
+  }
+
+  /* Glowing dot for decorative elements */
+  .glow-dot {
+    @apply rounded-full;
+    background: radial-gradient(circle, hsl(190 100% 55% / 0.6), transparent 70%);
+  }
 }

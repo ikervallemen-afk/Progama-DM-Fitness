@@ -1,15 +1,23 @@
 import { Check } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import UrgencyBanner from "@/components/UrgencyBanner";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 const CTAButton = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
-  <a
+  <motion.a
     href="https://buy.stripe.com/cNi9ASeTtbcb4or9oBd3i04"
-    className={`inline-block bg-primary text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-lg animate-pulse-glow hover:brightness-110 transition-all duration-300 ${className}`}
+    className={`inline-block bg-primary text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-lg animate-pulse-glow transition-all duration-300 relative overflow-hidden group ${className}`}
+    whileHover={{ scale: 1.05, y: -2 }}
+    whileTap={{ scale: 0.97 }}
   >
-    {children}
-  </a>
+    <span className="relative z-10">{children}</span>
+    <motion.div
+      className="absolute inset-0 shimmer-bg opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+      animate={{ backgroundPosition: ["0% 0%", "200% 0%"] }}
+      transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+    />
+  </motion.a>
 );
 
 const heroItems = [
@@ -20,14 +28,24 @@ const heroItems = [
 ];
 
 const HeroSection = () => {
+  const ref = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
+  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+  const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+
   return (
-    <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
-      <div className="absolute inset-0">
+    <section ref={ref} id="hero" className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Parallax background */}
+      <motion.div className="absolute inset-0" style={{ y: bgY }}>
         <img src={heroBg} alt="" className="w-full h-full object-cover opacity-40" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
-      </div>
+      </motion.div>
 
-      <div className="relative z-10 container mx-auto px-4 py-20 md:py-32">
+      {/* Decorative floating orbs */}
+      <div className="absolute top-1/4 right-1/4 w-64 h-64 glow-dot animate-glow-pulse pointer-events-none" />
+      <div className="absolute bottom-1/3 left-1/6 w-40 h-40 glow-dot animate-glow-pulse pointer-events-none" style={{ animationDelay: "1.5s" }} />
+
+      <motion.div className="relative z-10 container mx-auto px-4 py-20 md:py-32" style={{ opacity }}>
         <div className="max-w-3xl">
           <motion.h1
             initial={{ opacity: 0, y: 40, filter: "blur(10px)" }}
@@ -36,7 +54,14 @@ const HeroSection = () => {
             className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
           >
             Convierte tus DMs de Instagram en un sistema que filtra y agenda clientes{" "}
-            <span className="text-gradient-green">automáticamente</span>
+            <motion.span
+              className="text-gradient-green inline-block"
+              animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
+              transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+              style={{ backgroundSize: "200% 200%" }}
+            >
+              automáticamente
+            </motion.span>
           </motion.h1>
 
           <motion.p
@@ -57,12 +82,15 @@ const HeroSection = () => {
             {heroItems.map((item) => (
               <motion.div
                 key={item}
-                className="flex items-center gap-2"
+                className="flex items-center gap-2 group"
                 variants={{ hidden: { opacity: 0, x: -20 }, visible: { opacity: 1, x: 0 } }}
                 transition={{ duration: 0.5 }}
+                whileHover={{ x: 6 }}
               >
-                <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                <span className="text-foreground">{item}</span>
+                <motion.div whileHover={{ rotate: 360 }} transition={{ duration: 0.4 }}>
+                  <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                </motion.div>
+                <span className="text-foreground group-hover:text-primary transition-colors duration-200">{item}</span>
               </motion.div>
             ))}
           </motion.div>
@@ -93,7 +121,7 @@ const HeroSection = () => {
             Acceso inmediato • Sin conocimientos técnicos • Diseñado para coaches online
           </motion.p>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
