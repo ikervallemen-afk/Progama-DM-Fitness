@@ -75,7 +75,7 @@ const Navbar = () => {
             transition={{ delay: 0.9, duration: 0.4 }}
           >
             <motion.a
-              href="https://buy.stripe.com/cNi9ASeTtbcb4or9oBd3i04"
+              href="https://buy.stripe.com/9B6eVc5iT4NN08b8kxd3i05"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-bold bg-primary text-primary-foreground px-4 py-2 rounded-md transition-all"
@@ -128,7 +128,7 @@ const Navbar = () => {
                 </motion.a>
               ))}
               <motion.a
-                href="https://buy.stripe.com/cNi9ASeTtbcb4or9oBd3i04"
+                href="https://buy.stripe.com/9B6eVc5iT4NN08b8kxd3i05"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block mt-2 text-center text-sm font-bold bg-primary text-primary-foreground px-4 py-2.5 rounded-md"
