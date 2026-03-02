@@ -1,5 +1,5 @@
 import ScrollReveal from "@/components/ScrollReveal";
-import UrgencyBanner from "@/components/UrgencyBanner";
+
 import { motion } from "framer-motion";
 
 const PricingSection = () => {
@@ -37,9 +37,6 @@ const PricingSection = () => {
             <p>Sin compromiso.</p>
           </div>
 
-          <div className="mb-8 max-w-md mx-auto">
-            <UrgencyBanner />
-          </div>
 
           <motion.a
             href="https://buy.stripe.com/cNi9ASeTtbcb4or9oBd3i04"
