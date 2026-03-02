@@ -45,10 +45,28 @@ const HeroSection = () => {
       <div className="absolute top-1/4 right-1/4 w-64 h-64 glow-dot animate-glow-pulse pointer-events-none" />
       <div className="absolute bottom-1/3 left-1/6 w-40 h-40 glow-dot animate-glow-pulse pointer-events-none" style={{ animationDelay: "1.5s" }} />
 
+      {/* Background video on the right */}
+      <div className="absolute inset-0 flex justify-end items-center pointer-events-none overflow-hidden">
+        <motion.div
+          className="w-[50%] h-full hidden lg:flex items-center justify-center"
+          initial={{ opacity: 0, x: 60 }}
+          animate={{ opacity: 0.25, x: 0 }}
+          transition={{ duration: 1.2, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
+        >
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="h-full w-auto max-w-none object-cover"
+            src="/videos/DM_FITNESS_ESP.mov"
+          />
+        </motion.div>
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/40" />
+      </div>
+
       <motion.div className="relative z-10 container mx-auto px-4 py-20 md:py-32" style={{ opacity }}>
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-          {/* Text content */}
-          <div className="max-w-2xl flex-1">
+        <div className="max-w-2xl">
             <motion.h1
               initial={{ opacity: 0, y: 40, filter: "blur(10px)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -113,36 +131,6 @@ const HeroSection = () => {
             >
               Acceso inmediato • Sin conocimientos técnicos • Diseñado para coaches online
             </motion.p>
-          </div>
-
-          {/* Phone mockup with video */}
-          <motion.div
-            className="flex-shrink-0"
-            initial={{ opacity: 0, x: 60, rotateY: -10 }}
-            animate={{ opacity: 1, x: 0, rotateY: 0 }}
-            transition={{ duration: 1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          >
-            <div className="relative mx-auto w-[280px] md:w-[300px]">
-              {/* Phone frame */}
-              <div className="relative rounded-[2.5rem] border-[3px] border-muted bg-card p-2 glow-border shadow-2xl">
-                {/* Notch */}
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-28 h-6 bg-card rounded-b-2xl z-10" />
-                {/* Screen */}
-                <div className="rounded-[2rem] overflow-hidden bg-background">
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-auto block"
-                    src="/videos/DM_FITNESS_ESP.mov"
-                  />
-                </div>
-              </div>
-              {/* Glow behind phone */}
-              <div className="absolute -inset-8 -z-10 glow-dot opacity-40 blur-2xl" />
-            </div>
-          </motion.div>
         </div>
       </motion.div>
     </section>
