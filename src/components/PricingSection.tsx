@@ -25,7 +25,7 @@ const PricingSection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             >
-              9€
+              17€
             </motion.span>
           </div>
         </ScrollReveal>
@@ -44,7 +44,7 @@ const PricingSection = () => {
             whileHover={{ scale: 1.05, y: -3 }}
             whileTap={{ scale: 0.97 }}
           >
-            <span className="relative z-10">👉 Quiero mi Programa DM Fitness por 9€</span>
+            <span className="relative z-10">👉 Quiero mi Programa DM Fitness por 17€</span>
             <motion.div
               className="absolute inset-0 shimmer-bg opacity-0 group-hover:opacity-100 transition-opacity duration-500"
               animate={{ backgroundPosition: ["0% 0%", "200% 0%"] }}
