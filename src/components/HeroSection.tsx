@@ -6,7 +6,7 @@ import { useRef } from "react";
 
 const CTAButton = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
   <motion.a
-    href="https://buy.stripe.com/cNi9ASeTtbcb4or9oBd3i04"
+    href="https://buy.stripe.com/9B6eVc5iT4NN08b8kxd3i05"
     className={`inline-block bg-primary text-primary-foreground font-display font-bold text-lg px-8 py-4 rounded-lg animate-pulse-glow transition-all duration-300 relative overflow-hidden group ${className}`}
     whileHover={{ scale: 1.05, y: -2 }}
     whileTap={{ scale: 0.97 }}

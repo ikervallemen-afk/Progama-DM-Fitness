@@ -39,7 +39,7 @@ const PricingSection = () => {
 
 
           <motion.a
-            href="https://buy.stripe.com/cNi9ASeTtbcb4or9oBd3i04"
+            href="https://buy.stripe.com/9B6eVc5iT4NN08b8kxd3i05"
             className="inline-block bg-primary text-primary-foreground font-display font-bold text-xl px-10 py-5 rounded-lg animate-pulse-glow transition-all duration-300 relative overflow-hidden group"
             whileHover={{ scale: 1.05, y: -3 }}
             whileTap={{ scale: 0.97 }}
