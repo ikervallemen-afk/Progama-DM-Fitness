@@ -1,6 +1,6 @@
 import { Check } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import UrgencyBanner from "@/components/UrgencyBanner";
+
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
@@ -103,14 +103,6 @@ const HeroSection = () => {
             <CTAButton>Activa el Programa DM Fitness por solo 9€</CTAButton>
           </motion.div>
 
-          <motion.div
-            className="mt-6 max-w-md"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.1, duration: 0.5 }}
-          >
-            <UrgencyBanner />
-          </motion.div>
 
           <motion.p
             className="mt-4 text-sm text-muted-foreground"
