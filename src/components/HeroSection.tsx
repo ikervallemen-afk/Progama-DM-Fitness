@@ -100,7 +100,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.9, ease: [0.22, 1, 0.36, 1] }}
           >
-            <CTAButton>Activa el Programa DM Fitness por solo 9€</CTAButton>
+            <CTAButton>Activa el Programa DM Fitness por solo 17€</CTAButton>
           </motion.div>
 
 
